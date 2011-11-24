@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>.pyVerts' Django Base</h1>
+
+{% if user.is_authenticated %}
+Connected as {{ user }} (Logout)
+{% else %}
+{% url "allauth.account.account_login" %}
+Login ?
+{% endif %}
+
+{% endblock %}
