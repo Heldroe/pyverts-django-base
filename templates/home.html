@@ -3,10 +3,11 @@
 <h1>.pyVerts' Django Base</h1>
 
 {% if user.is_authenticated %}
-Connected as {{ user }} (Logout)
+{{ user }} (<a href="{% url account_logout %}">Logout</a>)
 {% else %}
-{% url "allauth.account.account_login" %}
-Login ?
+<a href="{% url account_login %}">
+Login
+</a>
 {% endif %}
 
 {% endblock %}

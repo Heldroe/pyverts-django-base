@@ -140,9 +140,9 @@ INSTALLED_APPS = (
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'allauth.twitter',
+#    'allauth.twitter',
     'allauth.openid',
-    'allauth.facebook',
+#    'allauth.facebook',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
@@ -169,5 +169,3 @@ LOGGING = {
         },
     }
 }
-
-SITE_ID = 2
