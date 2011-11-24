@@ -11,3 +11,7 @@ Pour installer django, django-allauth et python-sdk :
 Pour démarrer :
  - python manage.py syncdb
  - python manage.py runserver
+
+Internationalisation : 
+ - Mettre à jour les fichiers de messages : django-admin.py makemessages -a
+ - Compiler les fichiers de messages : django-admin.py compilemessages

@@ -30,7 +30,7 @@ TIME_ZONE = 'Europe/Paris'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'fr-FR'
+LANGUAGE_CODE = 'fr_FR'
 
 SITE_ID = 1
 
@@ -169,3 +169,7 @@ LOGGING = {
         },
     }
 }
+
+LOCALE_PATHS = (
+    os.path.join(PROJECT_DIR, 'conf/locale'),
+)
