@@ -12,5 +12,4 @@
 {% if allauth.openid_enabled %}
 <li><a title="Yahoo" class="socialaccount_provider yahoo" href="{% openid_login_url openid="http://me.yahoo.com" %}">Yahoo</a></li>
 <li><a title="OpenID" class="socialaccount_provider openid" href="{% openid_login_url %}">OpenID</a></li>
-<li><a title="Hyves" class="socialaccount_provider hyves" href="{% openid_login_url openid="http://hyves.nl" %}">Hyves</a></li>
 {% endif %}
