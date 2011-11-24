@@ -7,3 +7,7 @@ Dépendances :
 
 Pour installer django, django-allauth et python-sdk : 
  - sudo python setup.py install
+
+Pour démarrer :
+ - python manage.py syncdb
+ - python manage.py runserver
