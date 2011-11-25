@@ -1,12 +1,17 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% block body %}
-<h1>.pyVerts' Django Base</h1>
+<h1>{% trans "pyverts-django-base" %}</h1>
 
 {% if user.is_authenticated %}
-{{ user }} (<a href="{% url account_logout %}">Logout</a>)
+{{ user }} (<a href="{% url account_logout %}">{% trans "Log out" %}</a>)
 {% else %}
 <a href="{% url account_login %}">
-Login
+{% trans "Log in" %}
+</a>
+<br />
+<a href="{% url account_signup %}">
+{% trans "Sign up" %}
 </a>
 {% endif %}
 
