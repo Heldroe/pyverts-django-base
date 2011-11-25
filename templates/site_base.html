@@ -1,2 +1,44 @@
-{% block body %}
-{% endblock %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <title></title>
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/master.css" />
+        <noscript>
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/mobile.min.css" />
+        </noscript>
+        <script>
+            var ADAPT_CONFIG = {
+                // Where is your CSS?
+                path: '{{ STATIC_URL }}css/',
+
+                // false = Only run once, when page first loads.
+                // true = Change on window resize and page tilt.
+                dynamic: true,
+
+                // First range entry is the minimum.
+                // Last range entry is the maximum.
+                // Separate ranges by "to" keyword.
+                range: [
+                    '0px    to 760px  = mobile.min.css',
+                    '760px  to 980px  = 720.min.css',
+                    '980px  to 1280px = 960.min.css',
+                    '1280px to 1600px = 1200.min.css',
+                    '1600px to 1940px = 1560.min.css',
+                    '1940px to 2540px = 1920.min.css',
+                    '2540px           = 2520.min.css'
+                ]
+            };
+        </script>
+        <script src="{{ STATIC_URL }}js/adapt.min.js"></script>
+    </head>
+    <body lang="fr">
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
+

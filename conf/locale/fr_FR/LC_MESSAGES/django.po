@@ -68,7 +68,7 @@ msgstr ""
 #: allauth/account/forms.py:171 allauth/account/forms.py:345
 #, fuzzy
 msgid "Password (again)"
-msgstr "Réinitialisation de mot de passe"
+msgstr ""
 
 #: allauth/account/forms.py:198 allauth/account/forms.py:330
 #: allauth/account/forms.py:352 allauth/account/forms.py:428

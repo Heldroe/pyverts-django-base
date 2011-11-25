@@ -15,3 +15,6 @@ Pour démarrer :
 Internationalisation : 
  - Mettre à jour les fichiers de messages : django-admin.py makemessages -a
  - Compiler les fichiers de messages : django-admin.py compilemessages
+
+Bibliothèques : 
+ - adapt.js http://adapt.960.gs/ (Licences MIT et GPL)
