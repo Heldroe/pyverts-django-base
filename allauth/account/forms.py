@@ -33,8 +33,9 @@ alnum_re = re.compile(r"^\w+$")
 class LoginForm(forms.Form):
     
     password = forms.CharField(
-        label = _("Password"),
-        widget = forms.PasswordInput(render_value=False)
+        label = _("Passworduuu"),
+        widget = forms.PasswordInput(render_value=False),
+        css_classes = "input_large"
     )
     remember = forms.BooleanField(
         label = _("Remember Me"),
@@ -50,12 +51,14 @@ class LoginForm(forms.Form):
         if EMAIL_AUTHENTICATION:
             self.fields["email"] = forms.EmailField(
                 label = ugettext("E-mail"),
+                css_classes = "input_medium"
             )
             ordering.append("email")
         else:
             self.fields["username"] = forms.CharField(
                 label = ugettext("Username"),
                 max_length = 30,
+                css_classes = "input_large"
             )
             ordering.append("username")
         ordering.extend(["password", "remember"])

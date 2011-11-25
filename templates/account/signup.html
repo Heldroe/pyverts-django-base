@@ -7,10 +7,10 @@
 
 {% block body %}
     <h1>{% trans "Sign Up" %}</h1>
-    
     {% if user.is_authenticated %}
 {% include "account/snippets/already_logged_in.html" %}
     {% else %}
+    <div class="grid_6">
         <p>{% trans "Already have an account?" %} <a href="{{ login_url }}">{% trans "Sign in" %}</a>.</p>
         
         <form class="signup uniForm" id="signup_form" method="post" action="{% url account_signup %}">
@@ -25,7 +25,7 @@
                 </div>
             </fieldset>
         </form>
-        
+    </div>
     {% endif %}
 {% endblock %}
 
