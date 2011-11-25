@@ -35,10 +35,13 @@
             };
         </script>
         <script src="{{ STATIC_URL }}js/adapt.min.js"></script>
+        <script src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
     </head>
     <body lang="fr">
-        {% block body %}
-        {% endblock %}
+        <div class="container_12">
+            {% block body %}
+            {% endblock %}
+        </div>
     </body>
 </html>
 
