@@ -144,6 +144,9 @@ INSTALLED_APPS = (
 #    'allauth.twitter',
     'allauth.openid',
 #    'allauth.facebook',
+    'profiles',
+    'accounts',
+    'bootstrap'
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
@@ -174,3 +177,8 @@ LOGGING = {
 LOCALE_PATHS = (
     os.path.join(PROJECT_DIR, 'conf/locale'),
 )
+
+AUTH_PROFILE_MODULE = 'accounts.UserProfile'
+
+LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = '/login/'

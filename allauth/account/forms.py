@@ -29,13 +29,21 @@ from app_settings import *
 
 alnum_re = re.compile(r"^\w+$")
 
+from bootstrap.forms import BootstrapForm
+from bootstrap.forms import Fieldset
 
-class LoginForm(forms.Form):
+class LoginForm(BootstrapForm):
+    class Meta:
+        layout = (
+            Fieldset(unicode(_("Login")),
+                     "username",
+                     "password",
+                     "remember"),
+        )
     
     password = forms.CharField(
-        label = _("Passworduuu"),
-        widget = forms.PasswordInput(render_value=False),
-        css_classes = "input_large"
+        label = _("Password"),
+        widget = forms.PasswordInput(render_value=False)
     )
     remember = forms.BooleanField(
         label = _("Remember Me"),
@@ -51,14 +59,12 @@ class LoginForm(forms.Form):
         if EMAIL_AUTHENTICATION:
             self.fields["email"] = forms.EmailField(
                 label = ugettext("E-mail"),
-                css_classes = "input_medium"
             )
             ordering.append("email")
         else:
             self.fields["username"] = forms.CharField(
                 label = ugettext("Username"),
                 max_length = 30,
-                css_classes = "input_large"
             )
             ordering.append("username")
         ordering.extend(["password", "remember"])
@@ -102,7 +108,7 @@ class LoginForm(forms.Form):
             request.session.set_expiry(0)
 
 
-class BaseSignupForm(forms.Form):
+class BaseSignupForm(BootstrapForm):
     username = forms.CharField(
         label = _("Username"),
         max_length = 30,
@@ -165,6 +171,14 @@ class BaseSignupForm(forms.Form):
 
 
 class SignupForm(BaseSignupForm):
+    class Meta:
+        layout = (
+            Fieldset(unicode(_("Sign up")),
+                     "username",
+                     "password1",
+                     "password2",
+                     "email"),
+        )
     
     password1 = forms.CharField(
         label = _("Password"),

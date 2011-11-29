@@ -1,0 +1,23 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block pageheader %}
+<h1>{% trans "Your profile" %}</h1>
+{% endblock %}
+{% block body %}
+<div class="grid_6">
+    <dl>
+        <dt>Test1</dt>
+        <dd>
+            {{ profile.test }}
+        </dd>
+        <dt>Test2</dt>
+        <dd>
+            {{ profile.test2 }}
+        </dd>
+    </dl>
+    <a class="btn primary" href="{% url profiles_edit_profile %}" style="margin-bottom:10px">{% trans "Edit profile" %}</a>
+</div>
+{% endblock %}
+

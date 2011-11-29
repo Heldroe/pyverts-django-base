@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-25 22:41+0100\n"
+"POT-Creation-Date: 2011-11-28 11:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,114 +17,189 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: allauth/account/forms.py:36
-#, fuzzy
-msgid "Passworduuu"
-msgstr "Définir le mot de passe"
+#: allauth/account/forms.py:38
+msgid "Login"
+msgstr "Connexion"
 
-#: allauth/account/forms.py:41
-msgid "Remember Me"
-msgstr "Connexion automatique"
-
-#: allauth/account/forms.py:53 allauth/account/forms.py:116
-#: allauth/account/forms.py:287 allauth/account/forms.py:366
-#, fuzzy
-msgid "E-mail"
-msgstr "Ajouter un mail"
-
-#: allauth/account/forms.py:59 allauth/account/forms.py:107
-msgid "Username"
-msgstr ""
-
-#: allauth/account/forms.py:88
-msgid "This account is currently inactive."
-msgstr ""
-
-#: allauth/account/forms.py:91
-msgid "The e-mail address and/or password you specified are not correct."
-msgstr ""
-
-#: allauth/account/forms.py:93
-msgid "The username and/or password you specified are not correct."
-msgstr ""
-
-#: allauth/account/forms.py:119
-msgid "E-mail (optional)"
-msgstr ""
-
-#: allauth/account/forms.py:130
-msgid "Usernames can only contain letters, numbers and underscores."
-msgstr ""
-
-#: allauth/account/forms.py:136
-msgid "This username is already taken. Please choose another."
-msgstr ""
-
-#: allauth/account/forms.py:144
-msgid "A user is registered with this e-mail address."
-msgstr ""
-
-#: allauth/account/forms.py:170 allauth/account/forms.py:344
+#: allauth/account/forms.py:45 allauth/account/forms.py:176
+#: allauth/account/forms.py:350
 #, fuzzy
 msgid "Password"
 msgstr "Définir le mot de passe"
 
-#: allauth/account/forms.py:174 allauth/account/forms.py:348
+#: allauth/account/forms.py:49
+msgid "Remember Me"
+msgstr "Connexion automatique"
+
+#: allauth/account/forms.py:61 allauth/account/forms.py:122
+#: allauth/account/forms.py:293 allauth/account/forms.py:372
+#, fuzzy
+msgid "E-mail"
+msgstr "Ajouter un mail"
+
+#: allauth/account/forms.py:66 allauth/account/forms.py:113
+msgid "Username"
+msgstr ""
+
+#: allauth/account/forms.py:94
+msgid "This account is currently inactive."
+msgstr ""
+
+#: allauth/account/forms.py:97
+msgid "The e-mail address and/or password you specified are not correct."
+msgstr ""
+
+#: allauth/account/forms.py:99
+msgid "The username and/or password you specified are not correct."
+msgstr ""
+
+#: allauth/account/forms.py:125
+msgid "E-mail (optional)"
+msgstr ""
+
+#: allauth/account/forms.py:136
+msgid "Usernames can only contain letters, numbers and underscores."
+msgstr ""
+
+#: allauth/account/forms.py:142
+msgid "This username is already taken. Please choose another."
+msgstr ""
+
+#: allauth/account/forms.py:150
+msgid "A user is registered with this e-mail address."
+msgstr ""
+
+#: allauth/account/forms.py:180 allauth/account/forms.py:354
 msgid "Password (again)"
 msgstr ""
 
-#: allauth/account/forms.py:201 allauth/account/forms.py:333
-#: allauth/account/forms.py:355 allauth/account/forms.py:431
+#: allauth/account/forms.py:207 allauth/account/forms.py:339
+#: allauth/account/forms.py:361 allauth/account/forms.py:437
 msgid "You must type the same password each time."
 msgstr ""
 
-#: allauth/account/forms.py:237
+#: allauth/account/forms.py:243
 msgid "Your e-mail address has already been verified"
 msgstr ""
 
-#: allauth/account/forms.py:247
+#: allauth/account/forms.py:253 allauth/account/utils.py:93
+#: allauth/account/views.py:101 allauth/account/views.py:117
 #, python-format
 msgid "Confirmation e-mail sent to %(email)s"
 msgstr ""
 
-#: allauth/account/forms.py:295
+#: allauth/account/forms.py:301
 #, fuzzy
 msgid "This e-mail address already associated with this account."
 msgstr "Les adresses mail suivantes sont associées à votre compte :"
 
-#: allauth/account/forms.py:296
+#: allauth/account/forms.py:302
 #, fuzzy
 msgid "This e-mail address already associated with another account."
 msgstr "Les adresses mail suivantes sont associées à votre compte :"
 
-#: allauth/account/forms.py:313
+#: allauth/account/forms.py:319
 #, fuzzy
 msgid "Current Password"
 msgstr "Définir le mot de passe"
 
-#: allauth/account/forms.py:317 allauth/account/forms.py:414
+#: allauth/account/forms.py:323 allauth/account/forms.py:420
 #, fuzzy
 msgid "New Password"
 msgstr "Définir le mot de passe"
 
-#: allauth/account/forms.py:321 allauth/account/forms.py:418
+#: allauth/account/forms.py:327 allauth/account/forms.py:424
 #, fuzzy
 msgid "New Password (again)"
 msgstr "Définir le mot de passe"
 
-#: allauth/account/forms.py:327
+#: allauth/account/forms.py:333
 msgid "Please type your current password."
 msgstr ""
 
-#: allauth/account/forms.py:376
+#: allauth/account/forms.py:382
 #, fuzzy
 msgid "The e-mail address is not assigned to any user account"
 msgstr "Les adresses mail suivantes sont associées à votre compte :"
 
-#: allauth/account/forms.py:396
+#: allauth/account/forms.py:402
 #, fuzzy
 msgid "Password Reset E-mail"
 msgstr "Réinitialisation de mot de passe"
+
+#: allauth/account/utils.py:72
+#, python-format
+msgid "Successfully signed in as %(user)s."
+msgstr ""
+
+#: allauth/account/views.py:133
+#, python-format
+msgid "Removed e-mail address %(email)s"
+msgstr ""
+
+#: allauth/account/views.py:147
+#, fuzzy
+msgid "Primary e-mail address set"
+msgstr "Adresses mail"
+
+#: allauth/account/views.py:168 allauth/account/views.py:241
+#, fuzzy
+msgid "Password successfully changed."
+msgstr "Votre mot de passe a bien été modifié."
+
+#: allauth/account/views.py:191
+#, fuzzy
+msgid "Password successfully set."
+msgstr "Réinitialisation de mot de passe"
+
+#: allauth/account/views.py:255 templates/account/logout.html:10
+msgid "You have signed out."
+msgstr "Vous êtes maintenant déconnecté."
+
+#: allauth/openid/forms.py:6
+msgid "OpenID"
+msgstr ""
+
+#: allauth/socialaccount/forms.py:32
+msgid "Your local account has no password setup."
+msgstr ""
+
+#: allauth/socialaccount/forms.py:36
+msgid "Your local account has no verified e-mail address."
+msgstr ""
+
+#: allauth/socialaccount/helpers.py:111
+msgid "The social account has been connected to your existing account"
+msgstr ""
+
+#: allauth/socialaccount/oauth.py:89
+#, python-format
+msgid "Invalid response while obtaining request token from \"%s\"."
+msgstr ""
+
+#: allauth/socialaccount/oauth.py:111
+#, python-format
+msgid "Invalid response while obtaining access token from \"%s\"."
+msgstr ""
+
+#: allauth/socialaccount/oauth.py:124
+#, python-format
+msgid "No request token saved for \"%s\"."
+msgstr ""
+
+#: allauth/socialaccount/oauth.py:172
+#, python-format
+msgid "No access token saved for \"%s\"."
+msgstr ""
+
+#: allauth/socialaccount/oauth.py:192
+#, python-format
+msgid "No access to private resources at \"%s\"."
+msgstr ""
+
+#: allauth/socialaccount/views.py:68
+msgid "The social account has been disconnected"
+msgstr ""
 
 #: templates/home.html:4
 msgid "pyverts-django-base"
@@ -223,6 +298,7 @@ msgid "Forgot Password?"
 msgstr "Mot de passe oublié ?"
 
 #: templates/account/login.html:35
+#, python-format
 msgid ""
 "\n"
 "No account? <a href=\"%(signup_url)s\">Create one</a>.<br />\n"
@@ -235,10 +311,6 @@ msgstr ""
 #: templates/account/logout.html:5 templates/account/logout.html.py:8
 msgid "Signed Out"
 msgstr "Déconnecté"
-
-#: templates/account/logout.html:10
-msgid "You have signed out."
-msgstr "Vous êtes maintenant déconnecté."
 
 #: templates/account/password_change.html:5
 #: templates/account/password_change.html:8
@@ -403,6 +475,24 @@ msgstr ""
 msgid "OpenID Sign In"
 msgstr ""
 
+#: templates/profiles/create_profile.html:7
+#: templates/profiles/create_profile.html:11
+msgid "Create profile"
+msgstr ""
+
+#: templates/profiles/create_profile.html:22
+msgid "Create"
+msgstr ""
+
+#: templates/profiles/edit_profile.html:7
+#: templates/profiles/edit_profile.html:11
+msgid "Edit profile"
+msgstr ""
+
+#: templates/profiles/edit_profile.html:22
+msgid "Save"
+msgstr ""
+
 #: templates/socialaccount/account_inactive.html:5
 #: templates/socialaccount/account_inactive.html:8
 msgid "Account Inactive"
@@ -456,6 +546,10 @@ msgid ""
 "You are about to use your %(provider_name)s account to login to \n"
 "%(site_name)s. As a final step, please complete the following form:"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Passworduuu"
+#~ msgstr "Définir le mot de passe"
 
 #~ msgid ""
 #~ "Please sign in with one\n"

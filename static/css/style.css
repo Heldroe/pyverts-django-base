@@ -1,0 +1,15 @@
+body {
+    padding-top: 40px;
+}
+
+.page-header {
+    background-color: #F5F5F5;
+    padding: 20px 20px 10px;
+}
+
+.content {
+    background-color: #FFFFFF;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+}

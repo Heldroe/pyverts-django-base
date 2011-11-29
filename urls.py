@@ -7,7 +7,10 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url('', include('allauth.urls')),
-    url(r'^$', direct_to_template, {'template': 'home.html'}),
+    url(r'^profile/',include('profiles.urls')),
+    url(r'^$', direct_to_template, {'template': 'home.html',
+                                    'extra_context': {'homepage':True}},
+                                    name="home"),
     # Examples:
     # url(r'^$', 'tutorial.views.home', name='home'),
     # url(r'^tutorial/', include('tutorial.foo.urls')),
