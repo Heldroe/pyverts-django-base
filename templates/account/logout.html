@@ -2,10 +2,11 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Signed Out" %}{% endblock %}
+{% block pageheader %}
+<h1>{% trans "Signed Out" %}</h1>
+{% endblock %}
 
 {% block body %}
-<h1>{% trans "Signed Out" %}</h1>
 
 <p>{% trans "You have signed out." %}</p>
 {% endblock %}
