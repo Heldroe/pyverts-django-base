@@ -279,10 +279,15 @@ def profile_detail(request, username, public_profile_field=None,
     context = RequestContext(request)
     for key, value in extra_context.items():
         context[key] = callable(value) and value() or value
+
+    my_profile = False
+    if request.user.is_authenticated():
+        my_profile = (request.user == user)
     
     return render_to_response(template_name,
                               { 'profile': profile_obj,
-                                'profilepage': True},
+                                'profilepage': True,
+                                'my_profile': my_profile},
                               context_instance=context)
 
 def profile_list(request):

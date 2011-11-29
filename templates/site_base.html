@@ -59,7 +59,7 @@
                         <a href="{% url account_signup %}">{% trans "Sign up" %}</a></li>
                         {% endif %}
                         {% if user.is_authenticated %}
-                        {% if profilepage %}<li class="active">
+                        {% if my_profile %}<li class="active">
                         {% else %}<li>{% endif %}
                         <a href="{% url profiles_profile_detail username=user.username %}">{% trans "Profile" %}</a></li>
                         {% endif %}
@@ -75,7 +75,7 @@
                     {% if user.is_authenticated %}
                     <ul class="nav secondary-nav">
                         <li>
-                            <a href="{% url account_logout %}">{% trans "Log out" %}</a>
+                            <a href="{% url account_logout %}">{% trans "Log out" %} ({{ user.username }})</a>
                         </li>
                     </ul>
                     {% endif %}
