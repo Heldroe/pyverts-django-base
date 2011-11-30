@@ -2,7 +2,6 @@ import django.conf.global_settings as DEFAULT_SETTINGS
 
 import os
 PROJECT_DIR = os.path.dirname(__file__)
-PROJECT_URL = 'http://127.0.0.1:8000/'
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -148,7 +147,8 @@ INSTALLED_APPS = (
     'profiles',
     'accounts',
     'bootstrap',
-    'avatar'
+    'avatar',
+    'achievements'
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
@@ -189,3 +189,7 @@ LOGIN_URL = '/login/'
 
 AUTO_GENERATE_AVATAR_SIZES = (80, 90, 100)
 # end django-avatar parameters #
+
+# Achievements
+ACHIEVEMENT_CLASSES = ['accounts.handlers']
+

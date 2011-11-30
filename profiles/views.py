@@ -17,6 +17,8 @@ from django.views.generic.list_detail import object_list
 
 from profiles import utils
 
+from achievements.utils import get_user_score
+
 def create_profile(request, form_class=None, success_url=None,
                    template_name='profiles/create_profile.html',
                    extra_context=None):
@@ -287,7 +289,8 @@ def profile_detail(request, username, public_profile_field=None,
     return render_to_response(template_name,
                               { 'profile': profile_obj,
                                 'profilepage': True,
-                                'my_profile': my_profile},
+                                'my_profile': my_profile,
+                                'achievements_score': get_user_score(user)},
                               context_instance=context)
 
 def profile_list(request):
