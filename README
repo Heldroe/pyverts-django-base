@@ -18,5 +18,4 @@ Internationalisation :
  - Compiler les fichiers de messages : django-admin.py compilemessages
 
 Bibliothèques utilisées : 
- - formalize : http://formalize.me/ (Licences MIT et GPL)
  - Bootstrap : http://twitter.github.com/bootstrap/
